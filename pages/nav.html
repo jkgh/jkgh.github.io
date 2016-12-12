@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<!-- apple mobile web app capable -->
+		<!-- <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="format-detection" content="no"> -->
+		<!-- meta settings -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta property="og:title" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="images/icon_fb.jpg">
+		<meta property="og:site_name" content="">
+		<meta property="og:description" content="">
+		<!-- title -->
+		<title></title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<!-- css -->
+		<link rel="stylesheet" href="../js/vendor/bootstrap-3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../js/vendor/jquery.mobile-1.4.4/jquery.mobile-1.4.4.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- global setting -->
+<!-- 		<link rel="stylesheet" href="css/global/global-reset.css">
+		<link rel="stylesheet" href="css/global/global.css">
+		<link rel="stylesheet" href="css/global/global-component.css">
+		<link rel="stylesheet" href="css/global/global-helper-classes.css">
+		<link rel="stylesheet" href="css/global/retina.css">
+		<link rel="stylesheet" href="css/global/form.css"> -->
+	</head>
+	<script src="../js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="../js/vendor/jquery-ui-1.10.4/ui/minified/jquery-ui.min.js"></script>
+	<script src="../js/vendor/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- <script src="js/vendor/jquery.mobile-1.4.4/jquery.mobile-1.4.4.min.js"></script> -->
+	<div class="page-header"><h1>Nav Bar With Dynamic Search Field</h1></div>
+	<p></p>
+
+
+	<div class="codeconTop clearfix">
+		<div class="codecon_half">
+			<ul>
+				<li><a href="#">iGBS</a></li>
+				<li><a class="long-word" href="#">Test long word 12345678901234567890123456788</a></li>
+			</ul>
+		</div>
+		<div class="codecon_half">
+			<div id="Exp-serach" class="Exp-serach">
+			<form>
+				<input class="ExpInput " onkeyup="buttonUp();" placeholder="Enter your search term..." onblur="monkey();" type="search" value="" name="search" id="search">
+				<input class="Expbtn" type="submit" value="" style="z-index: -999;">
+				<span class="ExpIcon"><i class="fa fa-search"></i></span>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script>
+	$(document).ready(function(e) {
+		$(".SlideoutActive").toggle(function(){
+			$("ul li").each(function(index, element) {
+				$(this).animate(
+					{"margin-left":index*105}
+				);
+				$(this).css("transition","all .5s ease-in-out")
+			});			
+		},function(){
+			$(".SlideOutMenu ul li").each(function(index, element) {
+				$(this).animate(
+					{"margin-left":0}
+				);
+			});
+		}); 
+	});
+			$(document).ready(function(){
+			function buttonUp(){
+				 var valux = $('.ExpInput').val(); 
+					valux = $.trim(valux).length;
+					if(valux !== 0){
+						$('.Expbtn').css('z-index','99');
+					} else{
+						$('.ExpInput').val(''); 
+						$('.Expbtn').css('z-index','-999');
+					}
+			}
+			});
+			
+			$(document).ready(function(){
+				var submitIcon = $('.ExpIcon');
+				var submitInput = $('.ExpInput');
+				var searchBox = $('.Exp-serach');
+				var isOpen = false;
+				
+				$(document).mouseup(function(){
+					if(isOpen == true){
+					submitInput.val('');
+					$('.Expbtn').css('z-index','-999');
+					submitIcon.click();
+					}
+				});
+				
+				submitIcon.mouseup(function(){
+					return false;
+				});
+				
+				searchBox.mouseup(function(){
+					return false;
+				});
+						
+				submitIcon.click(function(){
+					if(isOpen == false){
+						searchBox.addClass('Exp-serach-open');
+						isOpen = true;
+					} else {
+						searchBox.removeClass('Exp-serach-open');
+						isOpen = false;
+					}
+			});
+			
+			});
+	</script>
+</body>
+</html>

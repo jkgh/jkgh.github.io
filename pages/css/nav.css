@@ -1,0 +1,106 @@
+.Exp-serach {
+	position: relative;
+	margin-top: 20px;
+	width: 0%;
+	min-width: 50px;
+	height: 50px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+} 
+.ExpInput {
+	background: #fff none repeat scroll 0 0;
+	border: medium none;
+	color: #A0B58D;
+	font-family: inherit;
+	font-size: 20px;
+	height: 50px;
+	margin: 0;
+	outline: medium none;
+	padding: 0 2%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+	z-index: 10;
+	}
+	input[type="search"].ExpInput {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+}
+.ExpInput::-webkit-input-placeholder {   
+	color: #eeeeee;
+}
+.ExpInput:-moz-placeholder {
+	color: #eeeeee;
+}  
+.ExpInput::-moz-placeholder {
+	color: #eeeeee;
+}
+.ExpInput:-ms-input-placeholder {
+	color: #eeeeee;
+}
+.ExpIcon, .Expbtn  {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+.Expbtn {
+	background: #fff; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+	filter: alpha(opacity=0); /* IE 5-7 */
+	opacity: 0;
+	color: transparent;
+	color:red;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+.ExpIcon {
+	color: #fff;
+	background: #333333;
+	z-index: 90;
+	font-size: 22px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+.ExpIcon:before {
+	content: "";
+}
+.Exp-serach.Exp-serach-open,
+.no-js .Exp-serach {
+	width: 100%;
+}
+.Exp-serach.Exp-serach-open .ExpIcon,
+.no-js .Exp-serach .ExpIcon {
+	background: #333333;
+	color: #fff;
+	z-index: 11;
+}
+.Exp-serach.Exp-serach-open .Expbtn,
+.no-js .Exp-serach .Expbtn {
+/*    z-index: 90;*/
+}
+.long-word{
+	    display:inline-block;
+    width:180px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
