@@ -7,9 +7,20 @@
     float: left;
     width: 50%;
 }
+.nav_40 {
+    float: left;
+    width: 40%;
+}
+.nav_fixedPortion {
+    float: left;
+    width: 10%;
+}
+.nav_fixedPortion img{
+	max-height: 30px;
+}
 .nav_bigPortion {
     float: left;
-    width: 90%;
+    width: 80%;
 }
 .Exp-serach {
 	position: relative;
