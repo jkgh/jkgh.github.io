@@ -1,14 +1,14 @@
 
 .nav_smallPortion {
-    float: left;
+    float: right;
     width: 10%;
 }
 .nav_half {
-    float: left;
+    float: right;
     width: 50%;
 }
 .nav_40 {
-    float: left;
+    float: right;
     width: 40%;
 }
 .nav_fixedPortion {
@@ -19,8 +19,8 @@
 	max-height: 70px;
 }
 .nav_bigPortion {
-    float: left;
-    width: 80%;
+    float: right;
+    width: 60%;
 }
 .Exp-serach {
 	position: relative;
