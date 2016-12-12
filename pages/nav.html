@@ -49,13 +49,10 @@
 
 
 	<div class="codeconTop clearfix">
-		<div class="codecon_half">
-			<ul>
-				<li><a href="#">iGBS</a></li>
-				<li><a class="long-word" href="#">Test long word 12345678901234567890123456788</a></li>
-			</ul>
+		<div class="nav_bigPortion" id="bigPortion">
+			<a class="long-word" href="#">Test long word 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890</a>
 		</div>
-		<div class="codecon_half">
+		<div class="nav_smallPortion" id="smallPortion">
 			<div id="Exp-serach" class="Exp-serach">
 			<form>
 				<input class="ExpInput " onkeyup="buttonUp();" placeholder="Enter your search term..." onblur="monkey();" type="search" value="" name="search" id="search">
@@ -123,9 +120,17 @@
 						
 				submitIcon.click(function(){
 					if(isOpen == false){
+						$('#smallPortion').removeClass('nav_smallPortion');
+						$('#smallPortion').addClass('nav_half');
+						$('#bigPortion').removeClass('nav_bigPortion');
+						$('#bigPortion').addClass('nav_half');
 						searchBox.addClass('Exp-serach-open');
 						isOpen = true;
 					} else {
+						$('#smallPortion').addClass('nav_smallPortion');
+						$('#smallPortion').removeClass('nav_half');
+						$('#bigPortion').addClass('nav_bigPortion');
+						$('#bigPortion').removeClass('nav_half');
 						searchBox.removeClass('Exp-serach-open');
 						isOpen = false;
 					}

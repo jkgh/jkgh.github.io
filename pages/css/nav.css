@@ -1,3 +1,16 @@
+
+.nav_smallPortion {
+    float: left;
+    width: 10%;
+}
+.nav_half {
+    float: left;
+    width: 50%;
+}
+.nav_bigPortion {
+    float: left;
+    width: 90%;
+}
 .Exp-serach {
 	position: relative;
 	margin-top: 20px;
@@ -24,7 +37,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	width: 50%;
+	width: 100%;
 	z-index: 10;
 	}
 	input[type="search"].ExpInput {
@@ -99,7 +112,7 @@
 }
 .long-word{
 	    display:inline-block;
-    width:180px;
+    width:100%;
     white-space: nowrap;
     overflow:hidden !important;
     text-overflow: ellipsis;
