@@ -37,18 +37,34 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    opacity: 0.3;
 }
 
-.overlay a:hover, .overlay a:focus {
+/*.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
+}*/
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 0px;
+    right: 0px;
     font-size: 60px;
 }
+
+.overlay .nextbtn{
+    position: absolute;
+    bottom: 65px;
+    right: 0px;
+    font-size: 60px;
+}
+
+.overlay .previousbtn{
+    position: absolute;
+    bottom: 65px;
+    left: 0px;
+    font-size: 60px;
+}
+
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
