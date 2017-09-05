@@ -5,20 +5,25 @@
       <meta name="viewport" content="width=device-width" />
       <title>Upload files using the GitHub APIs</title>
       <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="../js/vendor/bootstrap-3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../js/vendor/jquery.mobile-1.4.4/jquery.mobile-1.4.4.css">
    </head>
    <body>
-      <h1>Upload files using the GitHub APIs</h1>
+      <h1>上傳圖片</h1>
 
-      <form action="/" method="POST">
-         <label for="file">Select one or more files:</label>
-         <input name="file1" id="file1" type="file" class="inputFile"  /><!-- <input name="file" id="file" type="file" multiple /> -->
-          <input name="file2" id="file2" type="file" class="inputFile"   />
-          <input name="file3" id="file3" type="file"  class="inputFile"  />
+      <form action="/" method="POST" class="upload-form">
+         <!--<input name="couponChineseName" id="couponChineseName" type="text" placeholder="例:" />-->
+         <label for="couponEnglishUniqueName">請給coupon一個英文名字：</label>
+         <input class="form-control" name="couponEnglishUniqueName" id="couponEnglishUniqueName" type="text" placeholder="例:free_nuggests_with_drink"   />
+         <label for="file">請照順序放入照片：</label>
+         <label for="file1">優惠卷截圖</label><input class="form-control inputFile"  name="file1" id="file1" type="file"   /><!-- <input name="file" id="file" type="file" multiple /> -->
+         <label for="file2">彈出視窗截圖</label><input class="form-control inputFile"  name="file2" id="file2" type="file"   />
+         <label for="file2">倒數截圖</label><input class="form-control inputFile"  name="file3" id="file3" type="file"    />
 
 
          <label for="commit-title">上傳訊息:</label>
-         <input id="commit-title" name="commit-title" type="text" />
-         <input type="submit" />
+         <input class="form-control" id="commit-title" name="commit-title" type="text" />
+         <input class="form-control" type="submit"  />
       </form>
       </small>
 

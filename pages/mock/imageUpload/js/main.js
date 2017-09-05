@@ -61,10 +61,18 @@ function uploadFiles(files, commitTitle) {
       .all(filesPromises)
       .then(function(files) {
          return files.reduce(
-            function(promise, file) {
 
+            function(promise, file, currentIndex) {
+               console.log("current index of reduce:" + currentIndex);
                return promise.then(function() {
-                  file.filename = "pages/mock/images/" + file.filename;
+                  console.log("current index of reduce inside then:" + currentIndex);
+                  var re = /(?:\.([^.]+))?$/;
+                  var ext = re.exec(file.filename)[1]; 
+                  var newFileName = document.getElementById('couponEnglishUniqueName').value;
+                  currentIndex = currentIndex + 1;
+                  var currentIndexString = currentIndex.toString();
+                  file.filename = "pages/mock/images/" + newFileName + "_" + currentIndexString + "." + ext;
+                  console.log("current file name being upload: " + file.filename);
                   // Upload the file on GitHub
                   return gitHub.saveFile({
                      repository: gitHub.repository,
