@@ -5,7 +5,7 @@ var config = {
    username: 'jkgh',
    password: 'patch1107', // Either your password or an authentication token if two-factor authentication is enabled
    auth: 'basic',
-   repository: 'jkgh.github.io',
+   repository: 'jkgh.github.io',///pages/mock/images
    branchName: 'master'
 };
 var gitHub = new GitHub(config);
@@ -62,12 +62,14 @@ function uploadFiles(files, commitTitle) {
       .then(function(files) {
          return files.reduce(
             function(promise, file) {
+
                return promise.then(function() {
+                  file.filename = "pages/mock/images/" + file.filename;
                   // Upload the file on GitHub
                   return gitHub.saveFile({
                      repository: gitHub.repository,
                      branchName: config.branchName,
-                     filename: file.filename,
+                     filename: file.filename,//"pages/mock/images/"+
                      content: file.content,
                      commitTitle: commitTitle
                   });
@@ -81,7 +83,12 @@ function uploadFiles(files, commitTitle) {
 document.querySelector('form').addEventListener('submit', function (event) {
    event.preventDefault();
 
-   var files = document.getElementById('file').files;
+   var oldfiles = document.getElementById('file1').files;
+   var fileInputs = document.getElementsByClassName('inputFile');//.files
+   var files = [];
+   files[0] = fileInputs[0].files[0];
+   files[1] = fileInputs[1].files[0];
+   files[2] = fileInputs[2].files[0];
    var commitTitle = document.getElementById('commit-title').value;
 
    uploadFiles(files, commitTitle)

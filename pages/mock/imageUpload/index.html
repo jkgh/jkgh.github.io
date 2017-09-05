@@ -11,19 +11,15 @@
 
       <form action="/" method="POST">
          <label for="file">Select one or more files:</label>
-         <input name="file" id="file" type="file" multiple />
-         <label for="commit-title">Commit title:</label>
+         <input name="file1" id="file1" type="file" class="inputFile"  /><!-- <input name="file" id="file" type="file" multiple /> -->
+          <input name="file2" id="file2" type="file" class="inputFile"   />
+          <input name="file3" id="file3" type="file"  class="inputFile"  />
+
+
+         <label for="commit-title">上傳訊息:</label>
          <input id="commit-title" name="commit-title" type="text" />
          <input type="submit" />
       </form>
-
-      <small class="author">
-         Demo created by <a href="http://www.audero.it">Aurelio De Rosa</a>
-         (<a href="https://twitter.com/AurelioDeRosa">@AurelioDeRosa</a>).
-         This demo is part of
-         <a href="http://www.audero.it/blog/2015/10/16/upload-files-on-github-using-github-js" target="_blank">
-            an article I've written for my blog
-         </a>.
       </small>
 
       <script src="dist.js" defer async></script>
