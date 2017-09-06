@@ -4,3 +4,7 @@ bbq_wings_3.PNG
 big_mac_1.PNG
 big_mac_2.PNG
 big_mac_3.PNG
+dummy_1.PNG
+dummy_1.PNG
+dummy_2.PNG
+dummy_3.PNG
