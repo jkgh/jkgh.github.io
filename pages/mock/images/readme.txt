@@ -8,3 +8,6 @@ dummy_1.PNG
 dummy_1.PNG
 dummy_2.PNG
 dummy_3.PNG
+dummy2_1.PNG
+dummy2_2.PNG
+dummy2_3.PNG
