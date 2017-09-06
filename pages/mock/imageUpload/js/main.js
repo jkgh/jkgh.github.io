@@ -13,6 +13,7 @@ var gitHub = new GitHub(config);
 
 var oldReadme;
 var newReadme;
+var fileNamesUploaded;
 function getText(){
     // read text from URL location
     var request = new XMLHttpRequest();
@@ -51,7 +52,7 @@ function uploadReadme(readmeFile, commitTitle) {
    var files = [];
    files[0] = readmeFile;
    var filesPromises = [].map.call(files, readFile);
-
+   console.log("uploadReadme - after filesPromises");
    return Promise
       .all(filesPromises)
       .then(function(files) {
@@ -79,16 +80,18 @@ function saveTextAsFile(newFilenameToAdd, commitTitle)
 
     var textToWrite = oldReadme +"\n"+ newFilenameToAdd;
     var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
-    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
-      var downloadLink = document.createElement("a");
-    downloadLink.download = fileNameToSaveAs;
-    downloadLink.innerHTML = "Download File";
+    //var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+    //var downloadLink = document.createElement("a");
+    //downloadLink.download = fileNameToSaveAs;
+    //downloadLink.innerHTML = "Download File";
     if (window.webkitURL != null)
     {
         // Chrome allows the link to be clicked
         // without actually adding it to the DOM.
         //downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
         newReadme = window.webkitURL.createObjectURL(textFileAsBlob);
+        console.log("newReadme:");
+        console.log(newReadme);
     }
     else
     {
@@ -96,6 +99,8 @@ function saveTextAsFile(newFilenameToAdd, commitTitle)
         // before it can be clicked.
         //downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
         newReadme = window.URL.createObjectURL(textFileAsBlob);
+        console.log("newReadme in ff:");
+        console.log(newReadme);
         //downloadLink.onclick = destroyClickedElement;
         //downloadLink.style.display = "none";
         //document.body.appendChild(downloadLink);
@@ -103,6 +108,9 @@ function saveTextAsFile(newFilenameToAdd, commitTitle)
      uploadReadme(newReadme, commitTitle)
       .then(function() {
          alert('Your readme file has been saved correctly.');
+         console.log("before getting oldReadme = newReadme");
+         oldReadme = newReadme;
+         console.log("after getting oldReadme = newReadme");
       })
       .catch(function(err) {
          console.error(err);
@@ -122,6 +130,8 @@ function saveTextAsFile(newFilenameToAdd, commitTitle)
  * @returns {Promise}
  */
 function readFile(file) {
+   console.log("readFile file:");
+   console.log(file);
    return new Promise(function (resolve, reject) {
       var fileReader = new FileReader();
 
@@ -177,6 +187,11 @@ function uploadFiles(files, commitTitle) {
                   var newFileName = document.getElementById('couponEnglishUniqueName').value;
                   currentIndex = currentIndex + 1;
                   var currentIndexString = currentIndex.toString();
+                  if (fileNamesUploaded){
+                     fileNamesUploaded = fileNamesUploaded + "\n" + newFileName + "_" + currentIndexString + "." + ext;
+                  }else{
+                     fileNamesUploaded = newFileName + "_" + currentIndexString + "." + ext;
+                  }
                   file.filename = "pages/mock/images/" + newFileName + "_" + currentIndexString + "." + ext;
                   console.log("current file name being upload: " + file.filename);
                   // Upload the file on GitHub
@@ -208,11 +223,13 @@ document.querySelector('form').addEventListener('submit', function (event) {
    uploadFiles(files, commitTitle)
       .then(function() {
          alert('Your file has been saved correctly.');
+         //saveTextAsFile (fileNamesUploaded, commitTitle);
       })
       .catch(function(err) {
          console.error(err);
          alert('Something went wrong. Please, try again.');
       });
+   
 });
 
 getText();
