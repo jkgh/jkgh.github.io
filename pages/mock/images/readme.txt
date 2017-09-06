@@ -7,3 +7,8 @@ big_mac_3.PNG
 grilled_chicken_1.JPG
 grilled_chicken_2.JPG
 grilled_chicken_3.JPG
+take2_1.PNG
+take2_1.PNG
+take2_1.PNG
+take2_2.PNG
+take2_3.PNG
