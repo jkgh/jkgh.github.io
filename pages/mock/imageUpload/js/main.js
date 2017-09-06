@@ -84,32 +84,32 @@ function saveTextAsFile(newFilenameToAdd, commitTitle)
     //var downloadLink = document.createElement("a");
     //downloadLink.download = fileNameToSaveAs;
     //downloadLink.innerHTML = "Download File";
-    if (window.webkitURL != null)
-    {
-        // Chrome allows the link to be clicked
-        // without actually adding it to the DOM.
-        //downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-        newReadme = window.webkitURL.createObjectURL(textFileAsBlob);
-        console.log("newReadme:");
-        console.log(newReadme);
-    }
-    else
-    {
-        // Firefox requires the link to be added to the DOM
-        // before it can be clicked.
-        //downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-        newReadme = window.URL.createObjectURL(textFileAsBlob);
-        console.log("newReadme in ff:");
-        console.log(newReadme);
-        //downloadLink.onclick = destroyClickedElement;
-        //downloadLink.style.display = "none";
-        //document.body.appendChild(downloadLink);
-    }
-     uploadReadme(newReadme, commitTitle)
+    // if (window.webkitURL != null)
+    // {
+    //     // Chrome allows the link to be clicked
+    //     // without actually adding it to the DOM.
+    //     //downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    //     newReadme = window.webkitURL.createObjectURL(textFileAsBlob);
+    //     console.log("newReadme:");
+    //     console.log(newReadme);
+    // }
+    // else
+    // {
+    //     // Firefox requires the link to be added to the DOM
+    //     // before it can be clicked.
+    //     //downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    //     newReadme = window.URL.createObjectURL(textFileAsBlob);
+    //     console.log("newReadme in ff:");
+    //     console.log(newReadme);
+    //     //downloadLink.onclick = destroyClickedElement;
+    //     //downloadLink.style.display = "none";
+    //     //document.body.appendChild(downloadLink);
+    // }
+     uploadReadme(textFileAsBlob, commitTitle)
       .then(function() {
          alert('Your readme file has been saved correctly.');
          console.log("before getting oldReadme = newReadme");
-         oldReadme = newReadme;
+         //oldReadme = newReadme;
          console.log("after getting oldReadme = newReadme");
       })
       .catch(function(err) {
@@ -223,7 +223,9 @@ document.querySelector('form').addEventListener('submit', function (event) {
    uploadFiles(files, commitTitle)
       .then(function() {
          alert('Your file has been saved correctly.');
-         //saveTextAsFile (fileNamesUploaded, commitTitle);
+         console.log("fileNamesUploaded: " );
+         console.log(fileNamesUploaded);
+         saveTextAsFile (fileNamesUploaded, commitTitle);
       })
       .catch(function(err) {
          console.error(err);
