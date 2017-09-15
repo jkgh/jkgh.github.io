@@ -16,3 +16,7 @@ Free_Chicken_burger_with_$40_drink_3.JPG
 Free_Fish_burger_with_$40_drink_1.PNG
 Free_Fish_burger_with_$40_drink_2.PNG
 Free_Fish_burger_with_$40_drink_3.PNG
+
+新大麥克_1.JPG
+新大麥克_2.JPG
+新大麥克_3.JPG
