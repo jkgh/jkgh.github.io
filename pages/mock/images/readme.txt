@@ -20,3 +20,6 @@ Free_Fish_burger_with_$40_drink_3.PNG
 新大麥克_1.JPG
 新大麥克_2.JPG
 新大麥克_3.JPG
+New_big_mac_1.JPG
+New_big_mac_2.JPG
+New_big_mac_3.JPG
