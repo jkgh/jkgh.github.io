@@ -19,3 +19,6 @@ grilled_chicken_3.JPG
 nuggets_buy_one_get_one_1.JPG
 nuggets_buy_one_get_one_2.JPG
 nuggets_buy_one_get_one_3.JPG
+$1_ice_cream_cone_1.PNG
+$1_ice_cream_cone_2.PNG
+$10_fish_burger.PNG
