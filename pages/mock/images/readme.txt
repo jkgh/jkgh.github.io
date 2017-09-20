@@ -1,4 +1,3 @@
-bbq_wings_1.PNG
 big_mac_1.JPG
 big_mac_2.JPG
 big_mac_3.JPG
@@ -23,3 +22,4 @@ $10_fish_burger_1.PNG
 Free_nuggets_with_meal_1.JPG
 Free_nuggets_with_meal_2.JPG
 Free_nuggets_with_meal_3.JPG
+bbq_wings_1.PNG
