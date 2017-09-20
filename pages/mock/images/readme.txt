@@ -27,6 +27,8 @@ Free nuggets with meal_2.JPG
 Free nuggets with meal_1.JPG
 Free nuggets with meal_3.JPG
 Free nuggets with meal_1.JPG
-$10 fish_1.PNG
-$10 fish_2.PNG
-$10 fish_3.PNG
+Free_nuggets_with_meal_1.JPG
+Free_nuggets_with_meal_1.JPG
+Free_nuggets_with_meal_2.JPG
+Free_nuggets_with_meal_3.JPG
+Free_nuggets_with_meal_1.JPG
