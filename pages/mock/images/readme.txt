@@ -21,24 +21,7 @@ nuggets_buy_one_get_one_2.JPG
 nuggets_buy_one_get_one_3.JPG
 $1_ice_cream_cone_1.PNG
 $1_ice_cream_cone_2.PNG
-$10_fish_burger.PNG
-Free nuggets with meal_1.JPG
-Free nuggets with meal_2.JPG
-Free nuggets with meal_1.JPG
-Free nuggets with meal_3.JPG
-Free nuggets with meal_1.JPG
-Free_nuggets_with_meal_1.JPG
+$10_fish_burger_1.PNG
 Free_nuggets_with_meal_1.JPG
 Free_nuggets_with_meal_2.JPG
 Free_nuggets_with_meal_3.JPG
-Free_nuggets_with_meal_1.JPG
-Free_nuggets_with_meal2_1.JPG
-Free_nuggets_with_meal2_2.JPG
-Free_nuggets_with_meal2_3.JPG
-Free_nuggets_with_meal2_1.JPG
-Free_nuggets_with_meal2_2.JPG
-Free_nuggets_with_meal2_3.JPG
-10_fish_burger_1.PNG
-10_fish_burger_2.PNG
-10_fish_burger_3.PNG
-10_fish_burger_1.PNG
