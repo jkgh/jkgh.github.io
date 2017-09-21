@@ -16,7 +16,7 @@
   "file_english_name": "Free_Fish_burger_with_$40_drink_1.PNG"
 }, {
   "id": 5,
-  "chinese_name": "板烤雞腿堡買一送一",
+  "chinese_name": "板烤雞腿買一送一",
   "file_english_name": "grilled_chicken_1.JPG"
 }, {
   "id": 6,
@@ -24,11 +24,11 @@
   "file_english_name": "nuggets_buy_one_get_one_1.JPG"
 }, {
   "id": 7,
-  "chinese_name": "1元蛋捲冰淇淋",
+  "chinese_name": "$1元蛋捲冰淇淋",
   "file_english_name": "$1_ice_cream_cone_1.PNG"
 }, {
   "id": 8,
-  "chinese_name": "10元麥香魚",
+  "chinese_name": "10元麥香魚堡！",
   "file_english_name": "$10_fish_burger_1.PNG"
 }, {
   "id": 9,
@@ -40,6 +40,6 @@
   "file_english_name": "bbq_wings_1.PNG"
 }, {
   "id": 11,
-  "chinese_name": "大杯飲料買一送一",
+  "chinese_name": "大飲料買一送一",
   "file_english_name": "drinks_buy_one_get_one_1.PNG"
 }]
