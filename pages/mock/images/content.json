@@ -1,0 +1,41 @@
+[{
+  "id": 1,
+  "chinese_name": "大麥克買一送一",
+  "file_english_name": "big_mac_1.JPG"
+}, {
+  "id": 2,
+  "chinese_name": "冰炫風買一送一",
+  "file_english_name": "buy_one_get_one_ice_cream_1.PNG"
+}, {
+  "id": 3,
+  "chinese_name": "40冷飲送麥香雞",
+  "file_english_name": "Free_Chicken_burger_with_$40_drink_1.JPG"
+}, {
+  "id": 4,
+  "chinese_name": "40冷飲送麥香魚",
+  "file_english_name": "Free_Fish_burger_with_$40_drink_1.PNG"
+}, {
+  "id": 5,
+  "chinese_name": "板烤雞腿堡買一送一",
+  "file_english_name": "grilled_chicken_1.JPG"
+}, {
+  "id": 6,
+  "chinese_name": "四塊雞塊買一送一",
+  "file_english_name": "nuggets_buy_one_get_one_1.JPG"
+}, {
+  "id": 7,
+  "chinese_name": "1元蛋捲冰淇淋",
+  "file_english_name": "$1_ice_cream_cone_1.PNG"
+}, {
+  "id": 8,
+  "chinese_name": "10元麥香魚",
+  "file_english_name": "$10_fish_burger_1.PNG"
+}, {
+  "id": 9,
+  "chinese_name": "套餐送麥克雞塊",
+  "file_english_name": "Free_nuggets_with_meal_1.JPG"
+}, {
+  "id": 10,
+  "chinese_name": "套餐送bbq雞翅",
+  "file_english_name": "bbq_wings_1.PNG"
+}]
