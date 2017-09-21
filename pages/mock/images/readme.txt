@@ -8,4 +8,5 @@ $1_ice_cream_cone_1.PNG
 $10_fish_burger_1.PNG
 Free_nuggets_with_meal_1.JPG
 bbq_wings_1.PNG
+drinks_buy_one_get_one_1.PNG
 dummy_checkin_1.JPG

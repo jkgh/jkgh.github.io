@@ -33,9 +33,13 @@
 }, {
   "id": 9,
   "chinese_name": "套餐送麥克雞塊",
-  "file_english_name": "Free_nuggets_with_meal_1.JPG"
+  "file_english_name": "Free_nuggets_with_meal_1.JPG" 
 }, {
   "id": 10,
   "chinese_name": "套餐送bbq雞翅",
   "file_english_name": "bbq_wings_1.PNG"
+}, {
+  "id": 11,
+  "chinese_name": "大杯飲料買一送一",
+  "file_english_name": "drinks_buy_one_get_one_1.PNG"
 }]
