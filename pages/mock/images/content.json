@@ -54,4 +54,8 @@
   "id": 14,
   "chinese_name": "10元麥香雞",
   "file_english_name": "$10_chicken_burger.jpg"
+}, {
+  "id": 15,
+  "chinese_name": "1元薯條",
+  "file_english_name": "$1_small_fries.JPG"
 }]
