@@ -62,4 +62,20 @@
   "id": 16,
   "chinese_name": "蘋果派買一送一",
   "file_english_name": "apple_pie_buy_one_get_one_1.jpg"
+}, {
+  "id": 17,
+  "chinese_name": "嫩煎雞腿堡買一送一",
+  "file_english_name": "juicy_chicken_buy_1_get_1.PNG"
+}, {
+  "id": 18,
+  "chinese_name": "10元法式芥末香雞堡",
+  "file_english_name": "$10_french_chicken.jpg"
+}, {
+  "id": 19,
+  "chinese_name": "蘋果派買一送一(新)",
+  "file_english_name": "apple_pie_buy_1_get_1_new.JPG"
+}, {
+  "id": 20,
+  "chinese_name": "1元小薯",
+  "file_english_name": "$1_fries_new.PNG"
 }]
