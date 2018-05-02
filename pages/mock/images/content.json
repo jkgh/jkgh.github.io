@@ -76,6 +76,14 @@
   "file_english_name": "apple_pie_buy_1_get_1_new.JPG"
 }, {
   "id": 20,
-  "chinese_name": "1元小薯",
-  "file_english_name": "$1_fries_new.PNG"
+  "chinese_name": "勁辣雞腿堡買一送一",
+  "file_english_name": "buy_one_get_one_fried_spicy_chicken_burger.JPG"
+}, {
+  "id": 21,
+  "chinese_name": "大杯綠茶買一送一",
+  "file_english_name": "buy_one_get_one_green_tea.JPG"
+}, {
+  "id": 22,
+  "chinese_name": "嫩煎雞腿堡買一送一",
+  "file_english_name": "buy_one_get_one_panfried_chicken_burger.JPG"
 }]
