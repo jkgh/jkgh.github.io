@@ -94,4 +94,16 @@
   "id": 24,
   "chinese_name": "蝦堡買一送一",
   "file_english_name": "buy_one_get_one_shrimp_burger.jpg"
+}, {
+  "id": 25,
+  "chinese_name": "黑堡買一送一",
+  "file_english_name": "buy_one_get_one_black_burger.jpg"
+}, {
+  "id": 26,
+  "chinese_name": "紅堡買一送一",
+  "file_english_name": "buy_one_get_one_red_burger.jpg"
+}, {
+  "id": 27,
+  "chinese_name": "那提送豬排吐司",
+  "file_english_name": "free_pork_toast_with_latte.JPG"
 }]
