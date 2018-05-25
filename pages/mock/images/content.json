@@ -110,4 +110,16 @@
   "id": 28,
   "chinese_name": "10元冰奶茶",
   "file_english_name": "$10_iced_milk_tea.jpg"
+}, {
+  "id": 29,
+  "chinese_name": "10元冰美式",
+  "file_english_name": "$10_iced_coffee.jpg"
+}, {
+  "id": 30,
+  "chinese_name": "紅玉鴛鴦冰炫風買一送一",
+  "file_english_name": "buy_one_get_one_black_tea_jelly_McFlurry.jpg"
+}, {
+  "id": 31,
+  "chinese_name": "40冷飲送勁辣雞腿堡",
+  "file_english_name": "Free_fried_hot_chicken_burger_with_$40_drink.jpg"
 }]
