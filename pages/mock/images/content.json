@@ -126,4 +126,12 @@
   "id": 32,
   "chinese_name": "冰紅茶買一送一",
   "file_english_name": "buy_one_get_one_iced_tea.jpg"
+}, {
+  "id": 33,
+  "chinese_name": "拿鐵買一送一",
+  "file_english_name": "buy_one_get_one_latte.jpg"
+}, {
+  "id": 34,
+  "chinese_name": "冰炫風買一送一",
+  "file_english_name": "buy_one_get_one_McFlurry.jpg"
 }]
