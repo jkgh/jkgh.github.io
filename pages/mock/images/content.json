@@ -7,10 +7,6 @@
   "chinese_name": "冰炫風買一送一",
   "file_english_name": "buy_one_get_one_ice_cream_1.PNG"
 }, {
-  "id": 3,
-  "chinese_name": "40冷飲送麥香雞",
-  "file_english_name": "Free_Chicken_burger_with_$40_drink_1.JPG"
-}, {
   "id": 4,
   "chinese_name": "40冷飲送麥香魚",
   "file_english_name": "Free_Fish_burger_with_$40_drink_1.PNG"
@@ -138,4 +134,12 @@
   "id": 35,
   "chinese_name": "10元美式辣雞堡",
   "file_english_name": "$10_american_spicy_chicken.jpg"
-}]
+}, {
+  "id": 36,
+  "chinese_name": "40冷飲送麥香雞",
+  "file_english_name": "Free_Chicken_burger_with_$40_drink_1.JPG"
+}, {
+  "id": 37,
+  "chinese_name": "滿福堡買一送一",
+  "file_english_name": "buy_one_get_one_breakfast_hamburger.jpg"
+} ]
