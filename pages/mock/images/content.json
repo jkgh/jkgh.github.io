@@ -142,4 +142,12 @@
   "id": 37,
   "chinese_name": "滿福堡買一送一",
   "file_english_name": "buy_one_get_one_breakfast_hamburger.jpg"
-} ]
+}, {
+  "id": 38,
+  "chinese_name": "熱黑咖啡買一送一",
+  "file_english_name": "black_hot_coffee_buy1get1.jpg"
+}, {
+  "id": 39,
+  "chinese_name": "海陸雙星買一送一",
+  "file_english_name": "sea_and_meat_buy1get1.jpg"
+}   ]
